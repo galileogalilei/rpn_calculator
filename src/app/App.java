@@ -15,9 +15,12 @@ public class App {
             calculator.calculate("4 5 7 8 AVG 2 / .");
             calculator.calculate("1 2 + 8 6 MIN 10 * .");
             calculator.calculate("2 3 ^ 5 + .");
+            String infileToRpnInput = calculator.convertInfileToRpn("1 + 99");
+            System.out.println(infileToRpnInput);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
 
     }
 }
